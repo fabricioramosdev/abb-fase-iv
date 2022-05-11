@@ -1,6 +1,5 @@
 package com.embraer.abb_fase_iv_api.domain.service;
 
-import com.embraer.abb_fase_iv_api.domain.model.AlarmeConsolidado;
 import com.embraer.abb_fase_iv_api.domain.model.OleoMQTT;
 import com.embraer.abb_fase_iv_api.domain.repository.OleoMQTTRepository;
 import org.springframework.stereotype.Service;
