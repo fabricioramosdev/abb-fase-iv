@@ -2,6 +2,7 @@ package com.embraer.abb_fase_iv_api.domain.service;
 
 import com.embraer.abb_fase_iv_api.domain.model.AlarmeMQTT;
 import com.embraer.abb_fase_iv_api.domain.repository.AlarmeMQTTRepository;
+import com.embraer.abb_fase_iv_api.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 @Service
 public class AlarmeMQTTServiceImpl implements AlarmeMQTTService{
 
-    private AlarmeMQTTRepository alarmeMQTTRepository;
+    private final AlarmeMQTTRepository alarmeMQTTRepository;
 
     public AlarmeMQTTServiceImpl(AlarmeMQTTRepository alarmeMQTTRepository) {
         this.alarmeMQTTRepository = alarmeMQTTRepository;
@@ -17,11 +18,12 @@ public class AlarmeMQTTServiceImpl implements AlarmeMQTTService{
 
     @Override
     public List<AlarmeMQTT> getAll() {
-        return null;
+        return alarmeMQTTRepository.findAll();
     }
 
     @Override
     public AlarmeMQTT getById(Long id) {
-        return null;
+        return alarmeMQTTRepository.findById(id)
+                .orElseThrow( () -> new ResourceNotFoundException("Alarme MQTT não encontrado"));
     }
 }

@@ -2,6 +2,7 @@ package com.embraer.abb_fase_iv_api.domain.service;
 
 import com.embraer.abb_fase_iv_api.domain.model.GavetaAMQTT;
 import com.embraer.abb_fase_iv_api.domain.repository.GavetaAMQTTRepository;
+import com.embraer.abb_fase_iv_api.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 @Service
 public class GavetaAMQTTServiceImpl implements GavetaAMQTTService{
 
-    private GavetaAMQTTRepository gavetaAMQTTRepository;
+    private final GavetaAMQTTRepository gavetaAMQTTRepository;
 
     public GavetaAMQTTServiceImpl(GavetaAMQTTRepository gavetaAMQTTRepository) {
         this.gavetaAMQTTRepository = gavetaAMQTTRepository;
@@ -17,11 +18,12 @@ public class GavetaAMQTTServiceImpl implements GavetaAMQTTService{
 
     @Override
     public List<GavetaAMQTT> getAll() {
-        return null;
+        return gavetaAMQTTRepository.findAll();
     }
 
     @Override
     public GavetaAMQTT getById(Long id) {
-        return null;
+        return gavetaAMQTTRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Log da Gaveta A MQTT não encontrada"));
     }
 }

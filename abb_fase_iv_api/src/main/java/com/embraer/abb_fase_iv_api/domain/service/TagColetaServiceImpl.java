@@ -2,6 +2,7 @@ package com.embraer.abb_fase_iv_api.domain.service;
 
 import com.embraer.abb_fase_iv_api.domain.model.TagColeta;
 import com.embraer.abb_fase_iv_api.domain.repository.TagColetaRepository;
+import com.embraer.abb_fase_iv_api.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 @Service
 public class TagColetaServiceImpl implements TagColetaService {
 
-    private TagColetaRepository tagColetaRepository;
+    private final TagColetaRepository tagColetaRepository;
 
     public TagColetaServiceImpl(TagColetaRepository tagColetaRepository) {
         this.tagColetaRepository = tagColetaRepository;
@@ -17,11 +18,12 @@ public class TagColetaServiceImpl implements TagColetaService {
 
     @Override
     public List<TagColeta> getAll() {
-        return null;
+        return tagColetaRepository.findAll();
     }
 
     @Override
     public TagColeta getById(Long id) {
-        return null;
+        return tagColetaRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("tag não encontrada"));
     }
 }

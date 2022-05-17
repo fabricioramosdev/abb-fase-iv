@@ -2,6 +2,7 @@ package com.embraer.abb_fase_iv_api.domain.service;
 
 import com.embraer.abb_fase_iv_api.domain.model.GrupoColeta;
 import com.embraer.abb_fase_iv_api.domain.repository.GrupoColetaRepository;
+import com.embraer.abb_fase_iv_api.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 @Service
 public class GrupoColetaServiceImpl implements GrupoColetaService {
 
-    private GrupoColetaRepository grupoColetaRepository;
+    private final GrupoColetaRepository grupoColetaRepository;
 
     public GrupoColetaServiceImpl(GrupoColetaRepository grupoColetaRepository) {
         this.grupoColetaRepository = grupoColetaRepository;
@@ -17,11 +18,12 @@ public class GrupoColetaServiceImpl implements GrupoColetaService {
 
     @Override
     public List<GrupoColeta> getAll() {
-        return null;
+        return grupoColetaRepository.findAll();
     }
 
     @Override
     public GrupoColeta getById(Long id) {
-        return null;
+        return grupoColetaRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Grupo Coleta não encontrado"));
     }
 }

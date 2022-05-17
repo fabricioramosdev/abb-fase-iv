@@ -2,6 +2,7 @@ package com.embraer.abb_fase_iv_api.domain.service;
 
 import com.embraer.abb_fase_iv_api.domain.model.AlarmeConsolidado;
 import com.embraer.abb_fase_iv_api.domain.repository.AlarmeConsolidadoRepository;
+import com.embraer.abb_fase_iv_api.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 @Service
 public class AlarmeConsolidadoServiceImpl implements AlarmeConsolidadoService{
 
-    private AlarmeConsolidadoRepository alarmeConsolidadoRepository;
+    private final AlarmeConsolidadoRepository alarmeConsolidadoRepository;
 
     public AlarmeConsolidadoServiceImpl(AlarmeConsolidadoRepository alarmeConsolidadoRepository) {
         this.alarmeConsolidadoRepository = alarmeConsolidadoRepository;
@@ -17,11 +18,11 @@ public class AlarmeConsolidadoServiceImpl implements AlarmeConsolidadoService{
 
     @Override
     public List<AlarmeConsolidado> getAll() {
-        return null;
+        return alarmeConsolidadoRepository.findAll();
     }
 
     @Override
     public AlarmeConsolidado getById(Long id) {
-        return null;
+        return alarmeConsolidadoRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Alarme Consolidado não encontrado."));
     }
 }
