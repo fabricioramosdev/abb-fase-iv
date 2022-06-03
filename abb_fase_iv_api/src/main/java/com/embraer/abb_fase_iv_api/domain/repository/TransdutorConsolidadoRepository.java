@@ -11,7 +11,5 @@ import java.util.List;
 @Repository
 public interface TransdutorConsolidadoRepository extends JpaRepository<TransdutorConsolidado, Long> {
 
-    @Query(nativeQuery = true, value =
-            "select * from \"transdutorConsolidado\" where data between '2022-05-01 00:00:00' and '2022-05-31 00:00:00';")
     List<TransdutorConsolidado> findAllByDataBetween(LocalDateTime start, LocalDateTime end);
 }
