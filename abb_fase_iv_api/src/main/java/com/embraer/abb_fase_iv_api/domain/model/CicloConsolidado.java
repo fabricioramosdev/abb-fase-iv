@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "cicloConsolidado")
+@Table(name = "ciclo_consolidado")
 @Getter
 @Setter
 @Builder

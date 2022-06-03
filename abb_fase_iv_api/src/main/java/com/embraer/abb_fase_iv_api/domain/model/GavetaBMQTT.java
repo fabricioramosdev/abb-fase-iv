@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "gavetaBMqtt")
+@Table(name = "gaveta_b_mqtt")
 @Getter
 @Setter
 @Builder

@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class ConsolidadoData {
+public class ConsolidadoDTO {
 
     private GavetaDTO gavetaA;
     private GavetaDTO gavetaB;

@@ -7,8 +7,10 @@ import java.time.LocalTime;
 
 @Data
 @Builder
-public class CicloConsolidadoDTO {
+public class TransdutorConsolidadoDTO {
 
+    private Integer tps125;
+    private Integer tps170;
     private Integer pressaoA;
     private Integer pressaoB;
     private Integer qtdCiclos;

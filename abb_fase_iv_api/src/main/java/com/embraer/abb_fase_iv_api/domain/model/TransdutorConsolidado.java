@@ -2,22 +2,22 @@ package com.embraer.abb_fase_iv_api.domain.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "transdutorConsolidado")
+@Table(name = "`transdutorConsolidado`")
 @Getter
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class TransdutorConsolidado {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column
@@ -38,6 +38,6 @@ public class TransdutorConsolidado {
     @Column(name = "setpointa")
     private Integer setPointA;
 
-    @Column(name = "setpointb")
+    @Column(name = "setpontb")
     private Integer setPointB;
 }

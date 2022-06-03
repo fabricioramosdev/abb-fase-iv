@@ -10,5 +10,5 @@ import java.util.List;
 public class GavetaDTO {
 
     private Integer totalCiclos;
-    private List<CicloConsolidadoDTO> cicloConsolidadoDTOList;
+    private List<TransdutorConsolidadoDTO> transdutorConsolidadoDTOList;
 }

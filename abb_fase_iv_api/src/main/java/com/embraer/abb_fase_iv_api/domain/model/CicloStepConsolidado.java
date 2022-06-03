@@ -10,7 +10,7 @@ import java.sql.Time;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "cicloStepConsolidado")
+@Table(name = "ciclo_step_consolidado")
 @Getter
 @Setter
 @Builder

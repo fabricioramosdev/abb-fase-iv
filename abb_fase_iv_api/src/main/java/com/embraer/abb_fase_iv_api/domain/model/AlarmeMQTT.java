@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "alarmeMqtt")
+@Table(name = "alarme_mqtt")
 @Getter
 @Setter
 @Builder

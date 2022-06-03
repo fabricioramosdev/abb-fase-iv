@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "alarmeConsolidado")
+@Table(name = "alarme_consolidado")
 @Getter
 @Setter
 @Builder
