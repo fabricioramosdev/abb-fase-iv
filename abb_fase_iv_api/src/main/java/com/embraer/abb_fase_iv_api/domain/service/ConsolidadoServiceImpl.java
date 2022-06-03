@@ -28,6 +28,7 @@ public class ConsolidadoServiceImpl implements ConsolidadoService {
     @Override
     public Payload getConsolidadoByPeriod(LocalDate start, LocalDate end) {
         var teste = transdutorConsolidadoRepository.findAllByDataBetween(start.atStartOfDay(), end.atTime(LocalTime.MAX));
+        System.out.println(teste);
         return null;
     }
 }
