@@ -1,0 +1,16 @@
+<p-dialog [style]="{'width':'100%', 'height':'100%'}" [(visible)]="displayTendencia" *ngIf="displayTendencia" [responsive]="true" showEffect="fade" [modal]="true" [closable]="false">
+    <p-header>
+        <b>Tendência</b>
+        <div style="float: right">
+            <button pButton class="ui-button-raised ui-button-rounded" icon="pi pi-times" (click)="voltarPagina()"></button>
+        </div>
+
+    </p-header>
+    <div class="container">
+        <div *ngIf="loadCharts">
+            <google-chart *ngFor="let chart of charts" style="width: 100%;height: 400px;" [title]="chart.title" [type]="chart.type" [data]="chart.data" [columnNames]="chart.columnNames" [options]="chart.options" [width]="chart.width" [height]="chart.height" (select)="onSelect($event)">
+            </google-chart>
+        </div>
+    </div>
+</p-dialog>
+<router-outlet></router-outlet>

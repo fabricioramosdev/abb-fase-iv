@@ -1,0 +1,5 @@
+<div *ngIf="loadCharts">
+    <google-chart *ngFor="let chart of charts" style="width: 100%;height: 400px;" [title]="chart.title" [type]="chart.type" [data]="chart.data" [columnNames]="chart.columnNames" [options]="chart.options" [width]="chart.width" [height]="chart.height" (select)="onSelect($event)">
+    </google-chart>
+</div>
+<router-outlet></router-outlet>

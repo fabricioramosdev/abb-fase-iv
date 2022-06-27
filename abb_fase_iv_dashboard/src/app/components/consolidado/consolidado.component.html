@@ -1,0 +1,87 @@
+<p-dialog [style]="{'width':'100%', 'height':'100%'}" [(visible)]="displayConsolidado" *ngIf="displayConsolidado" [responsive]="true" showEffect="fade" [modal]="true" [closable]="false">
+    <p-header>
+        <b>Consolidado</b>
+        <button pButton class="ui-button-raised ui-button-rounded" icon="pi pi-times" style="float: right" (click)="voltarPagina()">
+        </button>
+    </p-header>
+    <div class="table-responsive mb-2">
+        <p-table id="tblConsolidado" #dt [columns]="colsConsolidado" [value]="iasaidas" selectionMode="single" (onRowSelect)="onRowSelect($event)" [paginator]="true" [rows]="14">
+            <ng-template pTemplate="caption">
+                <span style="font-size: 20px">Consolidado</span>
+            </ng-template>
+            <ng-template pTemplate="header" let-columns>
+                <tr>
+                    <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                        {{col.header}}
+                        <p-sortIcon [field]="col.field"></p-sortIcon>
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-rowData let-columns="columns">
+                <tr [pSelectableRow]="rowData">
+                    <td *ngFor="let col of columns">
+
+                        <div *ngIf="col.subsubfield;then subsub_content else sub_content"></div>
+                        <ng-template #subsub_content>
+                            {{rowData[col.field][col.subfield][col.subsubfield]}}
+                        </ng-template>
+                        <ng-template #sub_content>
+                            <div *ngIf="col.field == null; then empty_content else normal_content"></div>
+                            <ng-template #normal_content>
+                                <div *ngIf="col.subfield != null ; else nosub_content">
+                                    {{rowData[col.field][col.subfield]}}
+                                </div>
+                                <ng-template #nosub_content>
+                                    {{rowData[col.field]}}
+                                </ng-template>
+                            </ng-template>
+                            <ng-template #empty_content>
+                            </ng-template>
+                        </ng-template>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+    <div class="table-responsive mt-2" *ngIf="displayConsolidadoDet">
+        <p-table id="tblConsolidadoDet" #dt [columns]="colsConsolidadoDet" [value]="pressoes" selectionMode="single" (onRowSelect)="onRowSelectDet($event)" [paginator]="true" [rows]="14">
+            <ng-template pTemplate="caption">
+                <span style="font-size: 20px">Gaveta {{iasaida.gaveta}}</span>
+                <div style="float: right"><button pButton class="ui-button-raised ui-button-rounded mr-2" icon="pi pi-chart-bar" label="Ver Gráficos" (click)="gotoChartciclos()"></button></div>
+            </ng-template>
+            <ng-template pTemplate="header" let-columns>
+                <tr>
+                    <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                        {{col.header}}
+                        <p-sortIcon [field]="col.field"></p-sortIcon>
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-rowData let-columns="columns">
+                <tr [pSelectableRow]="rowData">
+                    <td *ngFor="let col of columns">
+
+                        <div *ngIf="col.subsubfield;then subsub_content else sub_content"></div>
+                        <ng-template #subsub_content>
+                            {{rowData[col.field][col.subfield][col.subsubfield]}}
+                        </ng-template>
+                        <ng-template #sub_content>
+                            <div *ngIf="col.field == null; then empty_content else normal_content"></div>
+                            <ng-template #normal_content>
+                                <div *ngIf="col.subfield != null ; else nosub_content">
+                                    {{rowData[col.field][col.subfield]}}
+                                </div>
+                                <ng-template #nosub_content>
+                                    {{rowData[col.field]}}
+                                </ng-template>
+                            </ng-template>
+                            <ng-template #empty_content>
+                            </ng-template>
+                        </ng-template>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</p-dialog>
+<router-outlet></router-outlet>
