@@ -1,0 +1,399 @@
+[{
+    "gaveta": "A",
+    "totalCiclos": 190,
+    "pressao": [{
+        "psi": 4000,
+        "qtdCiclos": 20,
+        "tempoMedCiclo": "1:20",
+        "tempoMaxCiclo": "3:00",
+        "cicloMax": {
+            "tempoCiclo": "3:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "3:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "2:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }, {
+        "psi": 5000,
+        "qtdCiclos": 125,
+        "tempoMedCiclo": "1:25",
+        "tempoMaxCiclo": "4:00",
+        "cicloMax": {
+            "tempoCiclo": "4:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "4:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "3:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }, {
+        "psi": 6000,
+        "qtdCiclos": 20,
+        "tempoMedCiclo": "1:30",
+        "tempoMaxCiclo": "5:00",
+        "cicloMax": {
+            "tempoCiclo": "5:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "5:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "4:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }, {
+        "psi": 7000,
+        "qtdCiclos": 15,
+        "tempoMedCiclo": "1:35",
+        "tempoMaxCiclo": "6:00",
+        "cicloMax": {
+            "tempoCiclo": "6:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "6:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "5:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }, {
+        "psi": 8000,
+        "qtdCiclos": 10,
+        "tempoMedCiclo": "1:40",
+        "tempoMaxCiclo": "7:00",
+        "cicloMax": {
+            "tempoCiclo": "7:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "7:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "6:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }]
+}, {
+    "gaveta": "B",
+    "totalCiclos": 190,
+    "pressao": [{
+        "psi": 4000,
+        "qtdCiclos": 20,
+        "tempoMedCiclo": "1:20",
+        "tempoMaxCiclo": "3:00",
+        "cicloMax": {
+            "tempoCiclo": "3:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "3:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "2:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }, {
+        "psi": 5000,
+        "qtdCiclos": 125,
+        "tempoMedCiclo": "1:25",
+        "tempoMaxCiclo": "4:00",
+        "cicloMax": {
+            "tempoCiclo": "4:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "4:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "3:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }, {
+        "psi": 6000,
+        "qtdCiclos": 20,
+        "tempoMedCiclo": "1:30",
+        "tempoMaxCiclo": "5:00",
+        "cicloMax": {
+            "tempoCiclo": "5:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "5:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "4:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }, {
+        "psi": 7000,
+        "qtdCiclos": 15,
+        "tempoMedCiclo": "1:35",
+        "tempoMaxCiclo": "6:00",
+        "cicloMax": {
+            "tempoCiclo": "6:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "6:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "5:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }, {
+        "psi": 8000,
+        "qtdCiclos": 10,
+        "tempoMedCiclo": "1:40",
+        "tempoMaxCiclo": "7:00",
+        "cicloMax": {
+            "tempoCiclo": "7:00",
+            "steps": [
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" },
+                { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                { "tempoStep": "0:15", "alarmsAssoc": "" },
+                { "tempoStep": "0:20", "alarmsAssoc": "" },
+                { "tempoStep": "0:25", "alarmsAssoc": "" }
+            ]
+        },
+        "ciclos": [{
+                "tempoCiclo": "7:00",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "2:15", "alarmsAssoc": "xxxxx" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            },
+            {
+                "tempoCiclo": "6:25",
+                "steps": [
+                    { "tempoStep": "0:20", "alarmsAssoc": "" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "0:15", "alarmsAssoc": "" },
+                    { "tempoStep": "1:45", "alarmsAssoc": "yyyy" },
+                    { "tempoStep": "0:25", "alarmsAssoc": "" }
+                ]
+            }
+        ]
+    }]
+}]
